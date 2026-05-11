@@ -1,6 +1,7 @@
 import axios from 'axios';
 import { showAlert } from './alerts';
 
+//because out api and websit are in the same server we can use relative url, if not we would have to use the full url of the api.
 export const bookTour = async (tourId) => {
   try {
     if (typeof Stripe === 'undefined')

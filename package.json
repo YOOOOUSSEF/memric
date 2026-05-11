@@ -7,8 +7,8 @@
     "start": "nodemon server.js",
     "start:prod": "cross-env NODE_ENV=production nodemon server.js",
     "debug": "ndb server.js",
- "watch:js": "parcel watch ./public/src/index.js --out-dir ./public/js --out-file bundle.js --no-source-maps",
-  "build:js": "parcel build ./public/src/index.js --out-dir ./public/js --out-file bundle.js --no-source-maps",
+    "watch:js": "parcel watch ./public/src/index.js --out-dir ./public/src --out-file bundle.js --no-source-maps",
+    "build:js": "parcel build ./public/src/index.js --out-dir ./public/src --out-file bundle.js --no-source-maps",
     "this is a comment": "// will put the bundle file in the same place where development files."
   },
   "author": "youssef hassan",
@@ -19,6 +19,7 @@
     "alerts.js": "^1.3.4",
     "axios": "^1.13.6",
     "bcryptjs": "^3.0.3",
+    "compression": "^1.8.1",
     "cookie-parser": "^1.4.7",
     "dotenv": "^17.2.3",
     "express": "^4.18.2",

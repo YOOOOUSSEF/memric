@@ -74,7 +74,7 @@ reviewSchema.statics.calculateAverageRating = async function (tourId) {
     },
   ]);
 
-  console.log(stats);
+  //console.log(stats);
 
   //if no review document has this tourId, the stats array will be empty.
   if (stats.length > 0) {

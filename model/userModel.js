@@ -119,7 +119,7 @@ userSchema.methods.createPasswordResetToken = function () {
 
   this.passwordResetExpire = Date.now() + 10 * 60 * 1000; //make the token valid for 10 minutes
 
-  console.log({ resetToken }, this.passwordResetToken);
+  //console.log({ resetToken }, this.passwordResetToken);
   return resetToken;
 };
 

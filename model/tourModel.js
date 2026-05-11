@@ -210,13 +210,14 @@ tourSchema.pre(/^find/, function (next) {
 
 //we make /^find/ Not 'find' => to make the middleware work on all mongoose methods that start with find.
 //this work after the query has executed, so it has docs like post document middleware.
-tourSchema.post(/^find/, function (docs, next) {
+
+/*tourSchema.post(/^find/, function (docs, next) {
   console.log(
     `the time take to execute the query in db is ${Date.now() - this.start} milliseconds`,
   );
   // console.log(docs);
   next();
-});
+});*/
 
 // //Aggregation Middleware  (before aggregate func execution)
 // tourSchema.pre('aggregate', function (next) {
